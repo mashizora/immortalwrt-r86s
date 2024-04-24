@@ -1,0 +1,7 @@
+uci set network.wan.device='eth0'
+uci set network.wan6.device='eth0'
+uci del network.@device[0].ports
+uci add_list network.@device[0].ports='eth1'
+uci add_list network.@device[0].ports='eth2'
+uci set network.lan.ipaddr='192.168.86.1'
+uci commit network
