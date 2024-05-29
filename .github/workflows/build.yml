@@ -20,8 +20,8 @@ jobs:
 
       - name: Download imagebuilder
         run: |
-          curl -L https://downloads.immortalwrt.org/snapshots/targets/x86/64/immortalwrt-imagebuilder-x86-64.Linux-x86_64.tar.zst -o imagebuilder.tar.zst
-          tar --zstd -xf imagebuilder.tar.zst --strip-components=1
+          curl -L https://downloads.immortalwrt.org/releases/23.05.2/targets/x86/64/immortalwrt-imagebuilder-23.05.2-x86-64.Linux-x86_64.tar.xz -o imagebuilder.tar.xz
+          tar --xz -xf imagebuilder.tar.xz --strip-components=1
 
       - name: Patch config
         run: |
