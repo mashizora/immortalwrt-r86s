@@ -1,0 +1,6 @@
+uci set homeproxy.config.main_udp_node='same'
+uci set homeproxy.config.dns_server='1.1.1.1'
+uci set homeproxy.config.routing_mode='bypass_mainland_china'
+uci set homeproxy.config.routing_port='all'
+uci set homeproxy.config.proxy_mode='redirect_tproxy'
+uci commit homeproxy
