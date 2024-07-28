@@ -12,6 +12,7 @@ sudo -E apt-get -qq clean
 # download imagebuilder
 VERSION=$(<VERSION)
 IMAGEBUILDER_URL="https://downloads.immortalwrt.org/releases/$VERSION/targets/x86/64/immortalwrt-imagebuilder-$VERSION-x86-64.Linux-x86_64.tar.xz"
+echo $IMAGEBUILDER_URL
 curl -L $IMAGEBUILDER_URL -o imagebuilder.tar.xz
 tar --xz -xf imagebuilder.tar.xz --strip-components=1
 rm -f imagebuilder.tar.xz
