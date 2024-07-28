@@ -1,5 +1,5 @@
-name: build
-on: workflow_dispatch
+name: Build
+on: [push, workflow_dispatch]
 
 jobs:
   build:
@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build images
-        run: ./build.sh
+        run: bash build.sh
 
       - name: Upload images
         uses: actions/upload-artifact@v4
