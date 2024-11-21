@@ -29,4 +29,4 @@ sed -i '/CONFIG_TARGET_ROOTFS_EXT4FS/d' .config
 
 
 # build with imagebuilder
-make image FILES="files" PACKAGES="luci-app-homeproxy"
+make image FILES="files" PACKAGES="luci-app-openclash"
